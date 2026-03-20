@@ -13,5 +13,7 @@ class UserProfile(models.Model):
     address = models.TextField()
     created_on = models.DateTimeField(auto_now_add = True)
 
+    phone = models.PositiveIntegerField(max_length = 10)
+    
     def __str__(self):
         return f"User {name} with Unique ID:{unique_id}"
